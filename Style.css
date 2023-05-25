@@ -15,7 +15,7 @@
     --text-primary: #1c1712 ;
     --text-secondary:#888859 ;
     --bg-primary: #e4e2e9;
-    --bg-secondary:  rgba(255, 255, 255, 0.9);
+    --bg-secondary:  rgba(255, 255, 255, 0.75);
 }
 
 /*  ------- Basale elementer --------- */
@@ -51,8 +51,77 @@ p{
   text-align: center;
 }
 
+/* ------- HEADER -------- */
+/* Styles til begge navbar */
 
-/* ------------- Landing ----------- 
+nav{
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  justify-content: space-between;
+  max-height: 60px;
+  align-items: center;
+  padding: 5px;
+  border-radius: 15px;
+  margin: 10px;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  z-index: 999;
+}
+
+.navbar-logo {
+  margin-left: 1rem;
+  margin-top: 0.25rem;
+}
+
+.navbar-logo img {
+  height: 60px;
+}
+
+.burger{
+  height: 40px;
+  margin-top: 0.25rem;
+  margin-right: 1rem;
+}
+
+.navbar-links {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap; /* Så teksten forbliver ved siden af hinaden >:C */
+  margin-right: 10px;
+}
+
+.navbar-links li {
+  margin-left: 2rem;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: var(--text-primary);
+  font-family: var(--font-size-primary);
+  font-size:var(--font-size-primary);
+}
+
+body {
+  margin-top: 60px;
+  background-color: rgb(216, 104, 84);
+} 
+
+/* Styles til desktop navbar */
+.navbar-desktop {
+  display: flex;
+}
+
+/* Styles til mobile navbar */
+.navbar-mobile {
+  display: none;
+}
+
+
+
+/* ------------- Landing og video----------- 
  id er brugt da landing kun er på forsiden, 
  så bliver kun brugt det ene sted. */
 
@@ -61,13 +130,13 @@ text-align: cetner;
  }
 
 #video {
-  margin-top: 2vw;
+  margin-top: 4vw;
   margin-bottom: 1vw;
   width: 100%;
   height: auto;
 }
 
-/* --------- Tre Kolonner --------- */
+/* --------- Tre Kolonner og billedekort --------- */
 .trekolonner{
   display: flex;
   justify-content: center;
@@ -75,7 +144,8 @@ text-align: cetner;
   height: auto;
   padding: 5px;
   margin-left: 6.6%;
-  margin-right:6.6%
+  margin-right:6.6%;
+  margin-bottom: 2vw;
 }
 
 .trekolonner img{
@@ -94,68 +164,63 @@ text-align: cetner;
   width: 100%;
 }
 
+/* --------------- Info boks og firekort ------------- */
 
-/* ------- HEADER -------- */
-/* Styles til begge navbar */
+.infoboks{
+  background-color: var(--bg-secondary);
+  height: auto;
+  padding: 5px;
+  border-radius: 15px;
+  margin-left: 6.6%;
+  margin-right:6.6%;
+  margin-bottom:2vw;
+  text-align: left;
+}
 
-nav{
-    background-color: rgba(255, 255, 255, 0.9);
-    display: flex;
-    justify-content: space-between;
-    height: auto;
-    align-items: center;
-    padding: 5px;
-    border-radius: 15px;
-    margin: 10px;
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    right: 10px;
-    z-index: 999;
-  }
-  
-  .navbar-logo {
-    margin-left: 1rem;
-  }
-  
-  .navbar-logo img {
-    height: 40px;
-  }
-  
-  .navbar-links {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap; /* Så teksten forbliver ved siden af hinaden >:C */
-    margin-right: 10px;
-  }
-  
-  .navbar-links li {
-    margin-left: 2rem;
-  }
-  
-  .navbar-links li a {
-    text-decoration: none;
-    color: var(--text-primary);
-    font-family: var(--font-size-primary);
-    font-size:var(--font-size-primary);
-  }
+.firekortcontainer{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);   /* 1fr betyder at grid template automatisk deler den tilgængelig plads mellem sig */
+  grid-template-rows: auto;
+  grid-gap: 20px;
+}
 
-  body {
-    margin-top: 60px;
-    background-color: rgb(216, 104, 84);
-  } 
-  
-  /* Styles til desktop navbar */
-  .navbar-desktop {
-    display: flex;
-  }
-  
-  /* Styles til mobile navbar */
-  .navbar-mobile {
-    display: none;
-  }
-  
+.firekort {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  height: auto;
+  margin-left:3rem;
+  margin-right:3rem;
+  margin-bottom:1.5rem;
+  margin-top:1.5rem;
+}
+
+.ikoner{
+  width:100px;
+  margin-bottom:1rem;
+  height: auto;
+}
+
+.infoboks h2 {
+ font-family: var(--font-primary);
+ font-size: var(--font-size-primary);
+ color: var(--text-primary);
+ margin-left: 2rem;
+ margin-top: 1rem;
+}
+
+.firekort p {
+  font-family: var(--font-secondary);
+  font-size: var(--font-size-secondary);
+  color: var(--text-primary);
+}
+
+
+
+
+
+
     
 
 
@@ -212,7 +277,7 @@ nav{
 
 /* ---------------- PC -------------------- */
 
-@media (min-width: 550px) {
+@media (min-width: 900px) {
 
 /* ----------- navbar --------- */
     .navbar-desktop {
@@ -222,6 +287,10 @@ nav{
       .navbar-mobile {
         display: none;
       }
+
+      .navbar-logo img {
+        height: 60px;
+      }
    
 }
 
@@ -229,13 +298,18 @@ nav{
 @media (max-width: 900px) {
     .navbar-desktop {
         display: flex;
+        max-height: 40px;
       }
 
-      
-      .navbar-mobile {
+    
+    .navbar-mobile {
         display: none;
       }
-   
+
+    .navbar-logo img {
+        height: 50px;
+      }
+
       .billedekort {
         flex-direction: column;
       }
@@ -243,7 +317,10 @@ nav{
       .trekolonner img {
         border-radius: 15px;
         max-width: 100%;
+        margin-bottom: 1rem;
   }
+
+
 
 
 }
@@ -267,7 +344,7 @@ nav{
 
     .navbar-mobile {
       display: flex;
-      max-height: 60px;
+      max-height: 40px;
     }
 
     #behind-text{
@@ -276,10 +353,18 @@ nav{
   
     .billedekort {
       flex-direction: column;
+      
     }
 
     .trekolonner img {
       border-radius: 15px;
       max-width: 100%;
+      margin-bottom: 1rem;
     }
+
+    #video{
+      margin-top: 3rem;
+    }
+
+  
   }
