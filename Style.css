@@ -80,12 +80,10 @@ text-align: cetner;
 
 .trekolonner img{
   border-radius: 15px;
-  width: auto;
+  width: 100%;
   height: auto;
-  max-width: 1440;
-  margin: 0 5px;
-  
-  transition: max-width 0.5s ease-in-out; /* transition, for at hjælpe billederne med at være responsive? */
+  max-width: 400px;
+  margin: 0 1px 0 1px;
 }
 
 
@@ -94,7 +92,6 @@ text-align: cetner;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin: 0 auto;
 }
 
 
@@ -246,7 +243,6 @@ nav{
       .trekolonner img {
         border-radius: 15px;
         max-width: 100%;
-      transition: max-width 0.5s ease-in-out;
   }
 
 
@@ -285,6 +281,5 @@ nav{
     .trekolonner img {
       border-radius: 15px;
       max-width: 100%;
-      transition: max-width 0.5s ease-in-out;
     }
   }
