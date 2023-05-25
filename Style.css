@@ -9,7 +9,7 @@
 :Root{
     font-size: 2vw;
     --font-size-primary: 2vw;
-    --font-size-secondary:  1vw;
+    --font-size-secondary:  1.5vw;
     --font-primary: 'Truculenta', sans-serif;
     --font-secondary: 'Raleway', sans-serif;
     --text-primary: #1c1712 ;
@@ -83,7 +83,49 @@ nav {
 
 
 
+/* ---------------- footer -------------- */
 
+.footer {
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border-radius: 15px;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .footer-logo {
+    margin-right: 1rem;
+  }
+  
+  .footer-logo img {
+    height: 40px;
+  }
+  
+  .footer-text {
+    color: var(--text-primary);
+    font-size:var(--font-size-primary);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer-text li {
+    margin-bottom: 5px;
+    margin-left: 1rem;
+    font-family: var(--font-secondary);
+    font-size: var(--font-size-secondary)
+  }
+  
+  .footer-text li:first-child{
+    font-family:var(--font-primary);
+    color:var(--text-secondary);
+    font-weight: bold;
+    font-size: var(--font-size-primary);
+    padding-bottom: 0.2rem;
+  }
 
 
 
