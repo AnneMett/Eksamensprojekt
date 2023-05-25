@@ -1,9 +1,143 @@
 *{
     margin: 0;
-    padding:0;
+    padding:0; 
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Truculenta', sans-serif;
+   }
+
+/* Styletile men css basically - så jeg nemt kan ændre uden at skal rode efter det hele*/
+:Root{
+    font-size: 2vw;
+    --font-size-primary: 2vw;
+    --font-size-secondary:  1vw;
+    --font-primary: 'Truculenta', sans-serif;
+    --font-secondary: 'Raleway', sans-serif;
+    --text-primary: #1c1712 ;
+    --text-secondary:#888859 ;
+    --bg-primary: #e4e2e9;
+    --bg-secondary:  rgba(255, 255, 255, 0.9);
 }
 
-/* Responsive design PC */
+
+/* ------- HEADER -------- */
+/* Styles til begge navbar */
+nav {
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    align-items: center;
+    padding: 5px;
+    border-radius: 15px;
+    margin: 10px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    z-index: 999;
+  }
+  
+  .navbar-logo {
+    margin-left: 1rem;
+  }
+  
+  .navbar-logo img {
+    height: 40px;
+  }
+  
+  .navbar-links {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap; /* Så teksten forbliver ved siden af hinaden >:C */
+    margin-right: 10px;
+  }
+  
+  .navbar-links li {
+    margin-left: 2rem;
+  }
+  
+  .navbar-links li a {
+    text-decoration: none;
+    color: var(--text-primary);
+    font-family: var(--font-size-primary);
+    font-size:var(--font-size-primary);
+  }
+
+  body {
+    margin-top: 60px;
+    background-color: rgb(216, 104, 84);
+  } 
+  
+  /* Styles til desktop navbar */
+  .navbar-desktop {
+    display: flex;
+  }
+  
+  /* Styles til mobile navbar */
+  .navbar-mobile {
+    display: none;
+  }
+  
+    
 
 
-/* Responsive desgin Mobil */
+
+
+
+
+
+
+
+/* --------------- RESPNONSIVE DESIGN -------------------- */
+
+/* ---------------- PC -------------------- */
+
+@media (min-width: 550px) {
+
+/* ----------- navbar --------- */
+    .navbar-desktop {
+        display: flex;
+      }
+    
+      .navbar-mobile {
+        display: none;
+      }
+   
+}
+
+/* ------------------ tablet if i need it? ----------------- 
+@media (max-width: 900px) {
+    .navbar-desktop {
+        display: flex;
+      }
+
+       
+      .navbar-mobile {
+        display: none;
+      }
+   
+} */
+
+/* ------------------ Mobil ----------------- */
+
+@media (max-width: 550px) {
+
+   /* ----------- navbar --------- */
+    .navbar-desktop {
+      display: none;
+    }
+  
+    .navbar-logo img {
+        height: 40px;
+      }
+
+      .navbar-links li {
+        margin-left: 1rem;
+      }
+
+    .navbar-mobile {
+      display: flex;
+      max-height: 60px;
+    }
+  }
