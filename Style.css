@@ -156,7 +156,7 @@ text-align: cetner;
   height: auto;
   max-width: 400px;
   margin: 0 1px 0 1px;
-}
+  }
 
 
 .billedekort {
@@ -165,6 +165,7 @@ text-align: cetner;
   align-items: center;
   width: 100%;
 }
+
 
 /* --------------- Info boks og firekort ------------- */
 
