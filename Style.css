@@ -22,12 +22,18 @@
 
 body{
   background-image: url(images/waves.png);
-  background-size: cover;
+  background-size:cover;
   margin-top: 60px;
+  background-color: #3d4a30;
 }
 
 body::-webkit-scrollbar{
   display: none;
+}
+
+#differentbackground{
+  background-image: url(images/menubackground.jpg);
+  background-size: cover;
 }
 
 h1{
@@ -78,6 +84,7 @@ nav{
 .navbar-logo {
   margin-left: 1rem;
   margin-top: 0.25rem;
+  margin-right: 1rem;
 }
 
 .navbar-logo img {
@@ -118,19 +125,38 @@ nav{
 /* Styles til mobile navbar */
 .navbar-mobile {
   display: none;
+  position: fixed;
+  margin-bottom: 1rem;
+  z-index: 9999;
 }
 
 .burgermenu{
-  
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top:20px;
 }
 
-/*  -------------- Burger Menu --------- */
+.burgermenu li{
+  width: 90%;
+  height: 25px;
+  margin: 0.5rem;
+  border-radius: 15px;
+  }
 
+.burgermenu li a{
+  font-size: 16px;
+  text-decoration: none;
+  color: var(--text-primary);
+  display:block;
+}
 
-
-
-
-
+.givemespace{
+  height: 15px;
+  width: auto;
+}
 
 
 
@@ -177,6 +203,7 @@ text-align: cetner;
   align-items: center;
   width: 100%;
 }
+
 
 
 /* --------------- Info boks og firekort ------------- */
@@ -451,6 +478,10 @@ text-align: cetner;
     .navbar-mobile {
       display: flex;
       max-height: 40px;
+    }
+
+    .burgermenu{
+      margin-top:80px;
     }
 
     .behind-text{
