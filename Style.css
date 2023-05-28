@@ -66,13 +66,6 @@ p{
   width: auto;
 }
 
-#video {
-  margin-top: 4vw;
-  margin-bottom: 1vw;
-  width: 100%;
-  height: auto;
-}
-
 /* ------- HEADER -------- */
 /* Styles til begge navbar */
 
@@ -177,6 +170,31 @@ nav{
   text-decoration: none;
   color: var(--text-primary);
   display:block;
+}
+
+/* ------------ Landing -------------- */
+
+.videocontainer {
+  position: relative;
+  width: 100%;
+}
+
+#video {
+  margin-top: 4vw;
+  margin-bottom: 1vw;
+  width: 100%;
+  height: auto;
+}
+
+.videocontainer .behind-text{
+  margin: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
 }
 
 /* --------- Tre Kolonner og billedekort --------- */
@@ -424,7 +442,15 @@ nav{
         border-radius: 15px;
         max-width: 100%;
         margin-bottom: 1rem;
-  }
+    }
+
+    .korteffekt{
+      transition: none
+    }
+    
+    .korteffekt:hover{
+      transform: none
+    }
 
  /* infoboksen */ 
   .infoboks {
@@ -508,6 +534,14 @@ nav{
     .billedekort {
       flex-direction: column;
       
+    }
+
+    .korteffekt{
+      transition: none
+    }
+    
+    .korteffekt:hover{
+      transform: none
     }
 
     .trekolonner img {
