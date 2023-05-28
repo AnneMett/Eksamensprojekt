@@ -42,7 +42,7 @@ p{
   color: var(--text-primary);
 }
 
-#behind-text {
+.behind-text {
   background-color: var(--bg-secondary);
   display: flex;
   justify-content: center;
@@ -119,6 +119,18 @@ nav{
 .navbar-mobile {
   display: none;
 }
+
+.burgermenu{
+  
+}
+
+/*  -------------- Burger Menu --------- */
+
+
+
+
+
+
 
 
 
@@ -224,9 +236,42 @@ text-align: cetner;
   font-size: 16px;
   color: var(--text-primary); 
   margin:1.5rem;
+  text-align: justify;
 }
 
 /* ------------------ Undersider ------------------- */
+
+.titlepic{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.titlepic img{
+  border-radius: 15px;
+  height: auto;
+  width:auto;
+}
+
+.info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.info .row{
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 2rem;
+  margin-right: 2rem;
+ 
+}
+
+.info .row img{
+  border-radius: 15px;
+}
 
 
 
@@ -303,6 +348,16 @@ text-align: cetner;
       .navbar-logo img {
         height: 60px;
       }
+
+
+      .info {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+    
+      .billededel {
+        width: 50%;
+      }
    
 }
 
@@ -367,6 +422,13 @@ text-align: cetner;
   .infoboks h2{
     font-size: 26px;
   }
+
+/* undersider */
+
+.billededel {
+  margin-top: 20px;
+}
+
 }
 
 /* ------------------ Mobil ----------------- */
@@ -391,8 +453,9 @@ text-align: cetner;
       max-height: 40px;
     }
 
-    #behind-text{
+    .behind-text{
       margin:10px;
+      width:auto;
     }
   
     .billedekort {
@@ -454,6 +517,16 @@ text-align: cetner;
       margin: auto;
       }
   
+/* undersider */
+
+
+  .billededel {
+    margin-top: 20px;
+  }
+
+  
+
+
     
 
     .footer{
