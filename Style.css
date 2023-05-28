@@ -21,10 +21,9 @@
 /*  ------- Basale elementer --------- */
 
 body{
-  background-image: url(images/waves.png);
+  background-image: url(images/waves1.svg);
   background-size:cover;
   margin-top: 60px;
-  background-color: #3d4a30;
 }
 
 body::-webkit-scrollbar{
@@ -32,7 +31,7 @@ body::-webkit-scrollbar{
 }
 
 #differentbackground{
-  background-image: url(images/menubackground.jpg);
+  background-image: url(images/waves2.svg);
   background-size: cover;
 }
 
@@ -65,6 +64,13 @@ p{
 .givemespace{
   height: 15px;
   width: auto;
+}
+
+#video {
+  margin-top: 4vw;
+  margin-bottom: 1vw;
+  width: 100%;
+  height: auto;
 }
 
 /* ------- HEADER -------- */
@@ -116,19 +122,15 @@ nav{
   height: auto;
   padding-left: 1rem;
   border-radius: 15px;
-  border-style: 1px solid #888859;
-  background: none;
-  
   transition: 1s;
 }
 
 .navbar-links li a {
   text-decoration: none;
   color: var(--text-primary);
-  font-family: var(--font-size-primary);
+  font-family: var(--font-primary);
   font-size:24px;
   margin-right: 1rem;
-
   transition: 0.5s;
 }
 
@@ -138,16 +140,13 @@ nav{
 
 .navbar-links li:hover{
   background-color: var(--text-secondary);
-  scale: 1.1;
+  transform: scale(1.1);
 }
-
 
 /* Styles til desktop navbar */
 .navbar-desktop {
   display: flex;
 }
-
-
 
 /* Styles til mobile navbar */
 .navbar-mobile {
@@ -180,28 +179,6 @@ nav{
   display:block;
 }
 
-
-
-
-
-/* ------------- Landing og video----------- 
- id er brugt da landing kun er på forsiden, 
- så bliver kun brugt det ene sted. */
-
- #landing {
-text-align: cetner;
- }
-
-
-#video {
-  margin-top: 4vw;
-  margin-bottom: 1vw;
-  width: 100%;
-  height: auto;
-}
-
-
-
 /* --------- Tre Kolonner og billedekort --------- */
 .trekolonner{
   display: flex;
@@ -222,7 +199,6 @@ text-align: cetner;
   margin: 0 1px 0 1px;
   }
 
-
 .billedekort {
   display: flex;
   justify-content: space-between;
@@ -235,10 +211,8 @@ text-align: cetner;
 }
 
 .korteffekt:hover{
-  scale:1.1;
+  transform: scale(1.1);
 }
-
-
 
 /* --------------- Info boks og firekort ------------- */
 
@@ -282,7 +256,6 @@ text-align: cetner;
   height: auto;
 }
 
-
 .infoboks h2 {
  font-family: var(--font-primary);
  font-size: 32px;
@@ -300,21 +273,21 @@ text-align: cetner;
   text-align: justify;
 }
 
-
-
 /* ------------------ Undersider ------------------- */
 
 .titlepic{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   margin: 1rem;
 }
 
 .titlepic img{
   border-radius: 15px;
   height: auto;
-  width:auto;
+  width: 100%;
+  margin:1rem;
 }
 
 .info{
@@ -322,6 +295,10 @@ text-align: cetner;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.info h1{
+  margin:1rem;
 }
 
 .info .row{
@@ -334,11 +311,10 @@ text-align: cetner;
 
 .info .row img{
   border-radius: 15px;
+  height: auto;
+  width: 100%;
+  margin-bottom:1rem;
 }
-
-    
-
-
 
 /* ---------------- footer -------------- */
 
@@ -383,9 +359,6 @@ text-align: cetner;
     font-size: var(--font-size-primary);
     padding-bottom: 0.2rem;
   }
-
-
-
 
 
 /* --------------- RESPONSIVE DESIGN-------------------- */
@@ -488,8 +461,16 @@ text-align: cetner;
 
 /* undersider */
 
-.billededel {
-  margin-top: 20px;
+.info .row p{
+  padding-left:0;
+}
+
+.titlepic {
+  margin: 0; 
+}
+
+.titlepic img {
+  margin: 1rem; 
 }
 
 }
@@ -585,10 +566,18 @@ text-align: cetner;
   
 /* undersider */
 
+.info .row p{
+  padding-left:0;
+}
 
-  .billededel {
-    margin-top: 20px;
-  }
+.titlepic {
+  margin: 0; 
+}
+
+.titlepic img {
+  margin: 1rem; 
+}
+
 
  /* footer */ 
 
@@ -597,5 +586,4 @@ text-align: cetner;
       font-size:12px;
     }
 
-  
   }
