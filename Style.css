@@ -9,7 +9,7 @@
 :Root{
     font-size: 2vw;
     --font-size-primary: 2vw;
-    --font-size-secondary:  1.5vw;
+    --font-size-secondary:  1.3vw;
     --font-primary: 'Truculenta', sans-serif;
     --font-secondary: 'Raleway', sans-serif;
     --text-primary: #1c1712 ;
@@ -367,7 +367,7 @@ nav{
     margin-bottom: 5px;
     margin-left: 1rem;
     font-family: var(--font-secondary);
-    font-size: var(--font-size-secondary)
+    font-size: var(--font-size-secondary);
   }
   
   .footer-text li:first-child{
