@@ -5,7 +5,8 @@
     font-family: 'Truculenta', sans-serif;
    }
 
-/* Styletile men css basically - så jeg nemt kan ændre uden at skal rode efter det hele*/
+/* Styletile men css basically - 
+så jeg nemt kan ændre uden at skal rode efter det hele*/
 :Root{
     font-size: 2vw;
     --font-size-primary: 2vw;
