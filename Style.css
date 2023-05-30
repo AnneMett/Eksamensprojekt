@@ -299,14 +299,16 @@ nav{
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: 1rem;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .titlepic img{
   border-radius: 15px;
   height: auto;
   width: 100%;
-  margin:1rem;
+  margin-top:1rem;
+  margin-bottom: 1rem;
 }
 
 .info{
@@ -335,6 +337,7 @@ nav{
   margin-bottom:1rem;
   max-height: 450px;
 }
+
 
 
 iframe{
@@ -498,9 +501,6 @@ iframe{
   padding-left:0;
 }
 
-.titlepic {
-  margin: 0; 
-}
 
 .titlepic img {
   margin: 1rem; 
@@ -611,8 +611,9 @@ iframe{
   padding-left:0;
 }
 
+
 .titlepic {
-  margin: 0; 
+  margin:10px;
 }
 
 .titlepic img {
@@ -633,5 +634,5 @@ iframe{
   .footer-text li:first-child{
     font-size:16px;
   }
-  
+
   }
