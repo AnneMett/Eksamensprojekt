@@ -333,7 +333,18 @@ nav{
   height: auto;
   width: 100%;
   margin-bottom:1rem;
+  max-height: 450px;
 }
+
+
+iframe{
+  border-radius: 15px;
+  height: auto;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom:1rem;
+}
+
 
 /* ---------------- footer -------------- */
 
@@ -356,15 +367,10 @@ nav{
     height: 40px;
   }
   
-  .footer-text {
-    color: var(--text-primary);
-    font-size:var(--font-size-primary);
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
+
   .footer-text li {
+    color: var(--text-primary);;
+    list-style-type: none;
     margin-bottom: 5px;
     margin-left: 1rem;
     font-family: var(--font-secondary);
@@ -618,7 +624,14 @@ nav{
 
 .footer{
       margin-top:1rem;
-      font-size:12px;
     }
 
+  .footer-text li{
+    font-size: 14px ;
+  }
+
+  .footer-text li:first-child{
+    font-size:16px;
+  }
+  
   }
